@@ -23,3 +23,30 @@ console.log(getFullName("Monster", "Lessons"));
 
 // run a .ts watch in Terminal with - tsc -w
 // specify types every time to make your code safer
+
+// creating objects
+const user: { name: string; age: number} = {
+    name: "monster",
+    age: 31,
+};
+const user2 = {
+    name: "Jack",
+};
+
+// or we can write it in other way
+interface User {
+    name: string;
+    age: number;
+}
+const user3: User = {
+    name: "jon",
+    age: 30,
+};
+
+// if we want to make interface part not mandatory we can use ? sign
+interface Part {
+    name: string;
+    age?: number;
+}
+
+console.log(user.) // showing all possible elements name and age
