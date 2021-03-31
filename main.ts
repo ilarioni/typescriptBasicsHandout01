@@ -15,3 +15,11 @@ let hey = true;
 let holla: string = "earth";
 holla = 2;  //Type 'number' is not assignable to type 'string'.ts(2322)
 
+//Functions
+const getFullName = (name: string, surname: string): string => {
+    return name + " " + surname;
+};
+console.log(getFullName("Monster", "Lessons"));
+
+// run a .ts watch in Terminal with - tsc -w
+// specify types every time to make your code safer
