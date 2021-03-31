@@ -93,4 +93,15 @@ let vUnknown: unknown = 10;
 let s1: string = vAny;
 let s2: string = vUnknown; // Type 'unknown' is not assignable to type 'string'.ts(2322)
 
+let pageNumber: string = "1";
+let numericPageNumber: number = pageNumber as number; // throws an error
 
+
+//
+let page: any = "1";
+let pageNewNumber = page as string;
+
+// type assertion
+const someElement = document.querySelector(".foo") as HTMLInputElement;
+
+console.log("someElement", someElement.value)
