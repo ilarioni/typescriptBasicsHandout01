@@ -50,3 +50,24 @@ interface Part {
 }
 
 console.log(user.) // showing all possible elements name and age
+
+//Union operator
+let username: string = "John";
+
+let pageName: string | number = "1";
+// or | union operator to assign either number or string value
+
+
+let errorMessage: string | null = "null";
+
+
+interface UserInterface {
+    name: string;
+    surname: string;
+}
+
+let user4: UserInterface | null = null; 
+
+let someProp: string | number | null | undefined | string[] | object  // not usable
+
+
