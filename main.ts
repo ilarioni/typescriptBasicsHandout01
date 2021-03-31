@@ -71,3 +71,26 @@ let user4: UserInterface | null = null;
 let someProp: string | number | null | undefined | string[] | object  // not usable
 
 
+// Void typescript
+const doSomething = (): void => {
+    console.log("doSomething");
+};
+
+//avoid an use of - any
+
+let meaw: any = "meaw";
+console.log(meaw.bar()); //it can be any type of parameter - that's why you should avoid of using any
+
+// never
+const makeSomething = (): never => {
+    throw "never";
+};
+
+// unknown
+let vAny: any = 10;
+let vUnknown: unknown = 10;
+
+let s1: string = vAny;
+let s2: string = vUnknown; // Type 'unknown' is not assignable to type 'string'.ts(2322)
+
+
