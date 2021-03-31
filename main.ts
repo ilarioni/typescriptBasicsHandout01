@@ -105,3 +105,20 @@ let pageNewNumber = page as string;
 const someElement = document.querySelector(".foo") as HTMLInputElement;
 
 console.log("someElement", someElement.value)
+
+// classes in TS
+class User6 {
+    firstName: string;
+    lastName: string;
+
+    constructor(firstName: string, lastName: string) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    getFullName(): string {
+        return this.firstName + " " + this.lastName;
+    }
+}
+
+const User7 = new User6("John", "Doe");
